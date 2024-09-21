@@ -106,7 +106,7 @@ body.dark {
     }
 
     img {
-        width: 100%; 
+        width: 30%; 
         height: auto; 
     }
 
@@ -123,7 +123,13 @@ body.dark {
         grid-template-columns: 1fr; 
         gap: 20px; 
     }
+#the{
+    
+        margin-left: 40%;
+        margin-top: -40%;
 
+
+}
     #one, #sec, #three, #four, #five, #six, #seven {
         display: block; 
         padding: 10px; 
