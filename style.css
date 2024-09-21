@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border: 30px solid rgb(91, 0, 119);
+    transition: background-color 0.3s, color 0.3s;
+}
+span{
+    color : rgb(2, 0, 148);
+    font-size: 2em;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(91, 0, 119);
+    color: white;
+}
+img{
+    height: 150px;
+}
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.home-tab {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 3000px;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    box-shadow: 0 30px 55px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+    font-size: 3em;
+    color: rgb(2, 0, 148);
+    text-decoration: uppercase;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+}
+
+.group {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 2fr 3fr;
+}
+
+.details, .education, .skill, .hobby, .lang, .stren, .pro {
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+#one, #sec, #three, #four, #five, #six, #seven {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background: #000000;
+    color: #ffffff;
+}
+
+.container.dark {
+    background: #000000;
+}
+
+#one.dark, #sec.dark, #three.dark, #four.dark, #five.dark, #six.dark, #seven.dark {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .container {
+        margin: 20px;
+        box-shadow: none; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .top {
+        height: 300px; 
+        padding: 20px; 
+    }
+
+    h2 {
+        font-size: 2em; 
+    }
+
+    .group {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+    #one, #sec, #three, #four, #five, #six, #seven {
+        display: block; 
+        padding: 10px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        padding: 20px; 
+    }
+
+    .container {
+        margin: 30px;
+    }
+
+    .top {
+        height: 350px; 
+    }
+
+    h2 {
+        font-size: 2.5em; 
+    }
+
+    .group {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px; 
+    }
+}
+
+@media (min-width: 901px) {
+    .container {
+        margin: 50px;
+    }
+
+    h2 {
+        font-size: 3em; 
+    }
+
+    .group {
+        grid-template-columns: 2fr 3fr;
+    }
+}
