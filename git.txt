@@ -1,0 +1,244 @@
+﻿Git:
+* Git is a distributed version control system for tracking changes in source code during software development. 
+* It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
+* Its goals include speed, data integrity, and support for distributed, non-linear workflows. 
+* Sure! Here are some essential Git notes:
+
+Basic Commands
+
+
+- **Initialize a Repository**:  
+  `git init`  
+  Creates a new Git repository.
+
+
+- **Clone a Repository**:  
+  `git clone <repo-url>`  
+  Copies a remote repository to your local machine.
+
+
+- Check Status:  
+  `git status`  
+  Shows the current status of your working directory.
+
+
+- Add Changes:  
+  `git add <file>`  
+  Stages changes for commit. Use `git add .` to stage all changes.
+
+
+- Commit Changes:  
+  `git commit -m "commit message"`  
+  Saves the staged changes with a message.
+
+
+- View Commit History:  
+  `git log`  
+  Displays the commit history.
+
+
+Branching
+
+
+- Create a Branch:  
+  `git branch <branch-name>`  
+  Creates a new branch.
+
+
+- Switch to a Branch:  
+  `git checkout <branch-name>`  
+  Moves to the specified branch.
+
+
+- Create and Switch:  
+  `git checkout -b <branch-name>`  
+  Creates and switches to a new branch.
+
+
+- Merge Branches:  
+  `git merge <branch-name>`  
+  Merges the specified branch into the current branch.
+
+
+Remote Repositories
+
+
+- Add Remote Repository:  
+  `git remote add <name> <url>`  
+  Links a local repository to a remote one.
+
+
+- Fetch Changes:  
+  `git fetch <remote>`  
+  Downloads changes from the remote repository.
+
+
+- Pull Changes:  
+  `git pull <remote> <branch>`  
+  Fetches and merges changes from the remote branch.
+
+
+- Push Changes:  
+  `git push <remote> <branch>`  
+  Uploads local commits to the remote repository.
+
+
+ Undoing Changes
+
+
+- Unstage Changes:  
+  `git reset <file>`  
+  Removes a file from the staging area.
+
+
+- Revert Changes:  
+  `git checkout -- <file>`  
+  Discards changes in the working directory.
+
+
+- Reset to Last Commit:  
+  `git reset --hard`  
+  Resets the working directory to the last commit (use with caution).
+
+
+Viewing Changes
+
+
+- Show Changes:  
+  `git diff`  
+  Displays changes between the working directory and the index.
+
+
+- Show Staged Changes:  
+  `git diff --cached`  
+  Shows changes between the index and the last commit.
+
+
+ Helpful Tips
+
+
+- Configure User Info:  
+  `git config --global user.name "Your Name"`  
+  `git config --global user.email "your.email@example.com"`  
+  Sets your identity for commits.
+
+
+- Ignore Files:  
+  Create a `.gitignore` file to specify which files or directories to ignore.
+
+
+ Advanced Commands
+
+
+- Rebase:  
+  `git rebase <branch>`  
+  Reapplies commits on top of another base branch.
+
+
+- Stash Changes:  
+  `git stash`  
+  Temporarily saves changes that are not ready to be committed.
+
+
+This is a quick reference; let me know if you need more details on any topic!
+
+
+branch
+git branch --set-upstream-to origin/new_branch
+This is not necessary if you used git push -u as suggested above.
+
+
+List the local branches that have already been merged to this one
+git branch --merged
+Diff a file between two branches
+git diff branch1 branch2 -- file
+Delete a branch both locally and remotely
+git branch -rd origin/branch_to_kill
+git branch -d branch_to_kill
+git push origin :branch_to_kill
+Move a commit from bad_branch to good_branch
+# First cherry-pick the commit onto the correct branch:
+git checkout good_branch
+git cherry-pick deadbeef
+
+
+# Then remove the commit from the bad branch:
+git checkout bad_branch
+git rebase -i
+# Change the undesirable commit to "noop"
+For more on branching, see Git topic branches.
+
+
+Rename the current branch
+git branch -m <new branch name>
+
+
+About Git:
+1.Git is a software.
+2.Git is a command-line tool
+3.Git is installed locally on the system
+4.Git is maintained by linux.        
+5.Git is focused on version control and code sharing.
+6.Git is a version control system to manage source code history. 
+7.Git was first released in 2005. 
+8.Git has no user management feature.
+9.Git is open-source licensed.
+git config
+Usage: git config –global user.name “[name]”  
+usage: git config –global user.email “[email address]”  
+This command sets the author name and email address respectively to be used with your commits.
+
+
+git init
+Usage: git init [repository name]
+This command is used to start a new repository. 
+
+
+git clone
+Usage: git clone [url]  
+This command is used to obtain a repository from an existing URL. 
+
+
+git add
+Usage: git add [file]  
+This command adds a file to the staging area.
+
+
+git commit
+Usage: git commit -m “[ Type in the commit message]”  
+This command records or snapshots the file permanently in the version history.
+
+
+git status
+Usage: git status  
+This command lists all the files that have to be committed.
+
+
+Status in Git:
+*untracked - File is not under control by git
+*unmodified - Git knows about file, but it has not been modified
+*modified - Git knows about the file and it has been modified
+*Staged - File is ready to commit
+
+
+
+
+
+
+
+
+
+
+GitHub: 
+* GitHub is a web-based Git repository hosting service, 
+* which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. 
+
+
+About GitHub:
+1.GitHub is a service
+2.GitHub is a graphical user interface
+3.GitHub is hosted on the web
+4.GitHub is maintained by Microsoft.
+5.GitHub is focused on centralized source code hosting.
+6.GitHub is a hosting service for Git repositories.
+7.GitHub was launched in 2008.
